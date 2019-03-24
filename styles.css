@@ -1,49 +1,83 @@
 body {
   background-color:#2998FB;
 }
-div{
-  background-color:#2998FB;
-}
 #map {
   position: fixed;
   height: 100%;
   width: 100%;
+  float:left;
   z-index:1;
+}
+.header{
+  position: absolute;
+  z-index: 5000;
+  right: 110px;
+  bottom: 4px;
+  width: 25%;
+  height:50px;
+  font-family: 'Padauk', sans-serif;
+  background:#2998FB;
+  opacity:0.85;
+  border-radius: 30px;
+  padding: 8px; 
+}
+.sidebar {
+  position:absolute;
+  font-family: 'Padauk', sans-serif;
+  z-index: 5000;
+  right: 80px;
+  bottom: 50px;
+  background-color:white;
+  opacity: .85;
+  border: 1px;
+  border-style: solid;
+  border-color: gray;
+  height: 25%;
+  width: 350px;  
+  border-radius:7px;
+
+  }
+.sidebar-content {
+  color: black;
+  font-family: 'Padauk', sans-serif;
+  font-size: 18px; 
+  background-color:transparent;
+  position:absolute;
+  z-index: 5000;
+  float: right;
+  right: 75px;
+  bottom: 66px;
+  height: 25%;
+  width: 350px;
+  padding-left:40px;
+  border-radius:7px;
 }
 p1 {
   color:#2998FB;
   font-size: 46px;
   background-color: #F7B267;
 }
-textarea{
-  z-index:2;
-}
 .type-picker {
-  position: fixed;
+  position: absolute;
   left: 3px;
-  top: 2px;
   font-size: 2rem;
   font-family: 'Padauk', sans-serif;
-  flex-direction: column;
   margin: 3em 2em;
   width: 350px;
   top: 3px;
   cursor: pointer;
-  background-color: transparent;
+  background-color: white;
+  opacity: .85;
   z-index:2;
 }
 option{
 font-family: 'Padauk', sans-serif;
 color: #2998FB;
-
 }
-
 .select-items div,.select-selected {
   color: #2998FB;
   padding: 8px 16px;
   border: transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.0) transparent;
   cursor: pointer;
-
 }
-
